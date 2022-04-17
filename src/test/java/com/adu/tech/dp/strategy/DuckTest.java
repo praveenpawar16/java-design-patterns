@@ -6,6 +6,7 @@ import com.adu.tech.dp.strategy.display.BlackDuck;
 import com.adu.tech.dp.strategy.display.WhiteDuck;
 import com.adu.tech.dp.strategy.display.YellowDuck;
 import com.adu.tech.dp.strategy.fly.FlyHigh;
+import com.adu.tech.dp.strategy.fly.FlyJet;
 import com.adu.tech.dp.strategy.fly.FlyLow;
 import com.adu.tech.dp.strategy.fly.FlyNever;
 import com.adu.tech.dp.strategy.quack.NoQuack;
@@ -50,6 +51,16 @@ class DuckTest {
 		gameDuck.fly();
 		gameDuck.display();
 		gameDuck.quack();
+		System.out.println();
+	}
+	
+	@Test
+	final void testRacerDuck() {
+		Duck racerDuck = new Duck("Racer Duck",new FlyJet(), new SimpleQuack(), new BlackDuck());
+		System.out.println("DuckType : " + racerDuck.getDuckType());
+		racerDuck.fly();
+		racerDuck.display();
+		racerDuck.quack();
 		System.out.println();
 	}
 
