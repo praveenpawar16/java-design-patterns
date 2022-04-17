@@ -65,14 +65,15 @@ class DuckTest {
 	}
 	
 	@Test
-	final void testMoutainDuck() {
-		Duck moutainDuck = new Duck("Moutain Duck",new FlyHigh(), new SimpleQuack(), new BlackDuck());
-		System.out.println("DuckType : " + moutainDuck.getDuckType());
-		moutainDuck.fly();
-		moutainDuck.display();
-		moutainDuck.quack();
+	final void testMountainDuck() {
+		Duck mountainDuck = new Duck("Mountain Duck",new FlyHigh(), new SimpleQuack(), new BlackDuck());
+		System.out.println("DuckType : " + mountainDuck.getDuckType());
+		mountainDuck.fly();
+		mountainDuck.display();
+		mountainDuck.quack();
 		System.out.println();
 	}
+	
 
 	
 }
