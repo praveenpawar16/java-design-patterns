@@ -20,6 +20,7 @@ class DuckTest {
 		riverDuck.fly();
 		riverDuck.display();
 		riverDuck.quack();
+		System.out.println();
 	}
 
 	@Test
@@ -29,6 +30,7 @@ class DuckTest {
 		toyDuck.fly();
 		toyDuck.display();
 		toyDuck.quack();
+		System.out.println();
 	}
 	
 	@Test
@@ -38,6 +40,17 @@ class DuckTest {
 		seaDuck.fly();
 		seaDuck.display();
 		seaDuck.quack();
+		System.out.println();
+	}
+	
+	@Test
+	final void testGameDuck() {
+		Duck gameDuck = new Duck("Game Duck",new FlyHigh(), new NoQuack(), new BlackDuck());
+		System.out.println("DuckType : " + gameDuck.getDuckType());
+		gameDuck.fly();
+		gameDuck.display();
+		gameDuck.quack();
+		System.out.println();
 	}
 
 	
